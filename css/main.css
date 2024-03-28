@@ -1,0 +1,20 @@
+/* ------------------------------
+    Makes search icon replace with x icon when collapsed
+    ------------------------------
+*/
+
+.bi-search {
+    display: none;
+}
+
+.bi-x {
+    display: inline;
+}
+
+.collapsed .bi-search {
+    display: inline;
+}
+
+.collapsed .bi-x {
+    display: none;
+}

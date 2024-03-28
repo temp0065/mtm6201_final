@@ -10,11 +10,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!-- Main CSS Link -->
     <link rel="stylesheet" href="css/main.css">
-    <!-- CSS Reset Link -->
-    <link rel="reset" href="css/reset.css">
 </head>
 <body>
-
     <header>
         <nav class="navbar bg-body-tertiary">
             <div class="container-lg">
@@ -25,31 +22,30 @@
 
                 <div class="collapse collapse-horizontal" id="search-bar">
                     <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
+                        <input class="form-control me-2 rounded-5" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success rounded-2" type="submit">Search</button>
                     </form>
                 </div> <!-- Closes #search-bar -->
     
                 <ul class="navbar-nav d-flex flex-row">
-                    <li class="fs-3">
-                        <button class="nav-link" data-bs-toggle="collapse" data-bs-target="#search-bar" aria-expanded="true" aria-controls="search-bar"><i class="bi bi-search"></i></button>
+                    <li class="fs-3 me-3 me-lg-4">
+                        <button class="nav-link collapsed" data-bs-toggle="collapse" data-bs-target="#search-bar" aria-expanded="true" aria-controls="search-bar"><i class="bi bi-search"></i> <i class="bi bi-x"></i></button>
                     </li>
     
                     <li class="fs-3">
-                        <a class="nav-link" href="index.html"><i class="bi bi-person-circle"></i></a>
+                        <a class="nav-link" href="#"><i class="bi bi-person-circle"></i></a>
                     </li>
                 </ul> <!-- Closes nav icons -->
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                     </li>
                     
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Dashboard</a>
+                        <a class="nav-link" href="dashboard.html">Dashboard</a>
                     </li>
                     
                     <li class="nav-item">
@@ -61,14 +57,44 @@
                     </li>
                     
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Goals</a>
+                        <a class="nav-link" href="tasks.html">Tasks</a>
                     </li>
                     </ul> <!--Closes .navbar-nav-->
+
                 </div><!-- Closes .nav-collapse-->
             </div><!-- Closes .container-lg-->
           </nav> <!-- Closes .navbar-->
-    </header>
-    <main></main>
+    </header> <!-- Closes header-->
+
+    <main>
+        <h1>Welcome to the Homepage</h1>
+        <h2>Dashboard</h2>
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/dashboard.jpg" class="d-block w-50 rounded-5" alt="Image of a dashboard">
+              </div>
+              <div class="carousel-item">
+                <img src="..." class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="..." class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        <p>
+            In the Dashboard you can find all the information you need summarized at a glance.
+        </p>
+    </main>
+
     <!-- Bootstrap Javascript Link -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
