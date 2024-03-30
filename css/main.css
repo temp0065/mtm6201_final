@@ -1,4 +1,21 @@
 /* ------------------------------
+    Changes styles
+    ------------------------------
+*/
+
+:root,
+[data-bs-theme=light],
+[data-bs-theme=dark] {
+    --bs-primary: #C78C06;
+    --bs-primary-rgb: 177, 126, 6;
+    --bs-secondary: #ffe6ac;
+    --bs-secondary-rgb: 255, 230, 172;
+    --cs-primary-dark: #ae7a01;
+    --cs-primary-rgb: 174, 122, 1;
+}
+
+
+/* ------------------------------
     Makes search icon replace with x icon when collapsed
     ------------------------------
 */
