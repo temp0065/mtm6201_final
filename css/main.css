@@ -1,17 +1,48 @@
 /* ------------------------------
-    Changes styles
+    Changes built in Bootstrap styles
     ------------------------------
 */
 
 :root,
 [data-bs-theme=light],
 [data-bs-theme=dark] {
-    --bs-primary: #C78C06;
-    --bs-primary-rgb: 177, 126, 6;
-    --bs-secondary: #ffe6ac;
-    --bs-secondary-rgb: 255, 230, 172;
-    --cs-primary-dark: #ae7a01;
-    --cs-primary-rgb: 174, 122, 1;
+    --bs-primary: #2d4189;
+    --bs-primary-rgb: 45, 65, 137;
+    --bs-secondary: #6684b9;
+    --bs-secondary-rgb: 102, 132, 185;
+    --cs-primary-dark: #202d45;
+    --cs-primary-rgb: 32, 45, 69;
+}
+
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: var(--bs-primary);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: var(--cs-primary-dark);
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--bs-primary);
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #0d6efd;
+    --bs-btn-disabled-border-color: #0d6efd;
+}
+
+.btn-outline-primary {
+    --bs-btn-color: var(--bs-primary);
+    --bs-btn-border-color: var(--bs-primary);
+    --bs-btn-hover-color: var(--cs-primary-dark);
+    --bs-btn-hover-bg: none;
+    --bs-btn-hover-border-color: var(--cs-primary-dark);
+    --bs-btn-focus-shadow-rgb: 13, 110, 253;
+    --bs-btn-active-color: var(--bs-primary);
+    --bs-btn-active-bg: none;
+    --bs-btn-active-border-color: var(--bs-primary);
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #0d6efd;
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: #0d6efd;
+    --bs-gradient: none;
 }
 
 /* ------------------------------
@@ -45,6 +76,31 @@ input::placeholder {
     font-weight: 400;
 }
 
+/* ------------------------------
+    Skip Links  
+    ------------------------------
+*/
+
+.skip-links {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Makes skip links off page, and gives them style */
+.skip-links a {
+    position: absolute;
+    top: -8em;
+    background-color: #FA4A0C;
+    color: white;
+    padding: .5em 1em;
+    font-weight: bold;
+}
+
+/* Has skip links appear at top corner only when focusing */
+.skip-links a:focus {
+    top: 0;
+}
 
 /* ------------------------------
     Makes search icon replace with x icon when collapsed
@@ -80,4 +136,13 @@ input::placeholder {
 .management {
     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../images/management.jpg) no-repeat center center;
     background-size: cover;
+}
+
+/* ------------------------------
+    Changes styles on buttons
+    ------------------------------
+*/
+
+.btn-outline-primary:hover {
+    text-decoration: underline;
 }
