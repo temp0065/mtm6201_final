@@ -16,23 +16,26 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <main>
+    <main role="main">
+        <h1 class="p-4 text-center">Dashboard</h1>
         <section>
             <div class="container-xl">
                 <div class="row">
                     <div class="col-12">
-                        <div class="card">
+                        <h2 class="fs-3">Footage</h2>
+                        <div class="card footage text-light">
                             <div class="card-body">
-                                <h3>Room 222: Smoke Alarm</h3>
+                                <h3>Room 222: Smoke Alarm <i class="bi bi-exclamation-lg text-danger display-3"></i></h3>
                                 <p>2:00 p.m 2025-1-10</p>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-6">
+                        <h2 class="fs-3">Temperature</h2>
                         <div class="card">
                             <div class="card-body bg-secondary">
-                                <h3>Average</h3>
+                                <h3>Average <i class="bi bi-thermometer-low display-2"></i></h3>
                                 <p>20°C</p>
                                 <h3>Highest/Lowest</h3>
                                 <p>20°C</p>
@@ -41,9 +44,10 @@
                     </div>
 
                     <div class="col-6">
+                        <h2 class="fs-3">Doors + Lights</h2>
                         <div class="card">
                             <div class="card-body bg-dark text-light rounded-3">
-                                <h3>Doors Broken</h3>
+                                <h3>Doors Broken <i class="bi bi-door-open-fill display-2"></i></h3>
                                 <ul>
                                     <li>Room 204</li>
                                     <li>Room 178</li>
@@ -53,15 +57,18 @@
                         </div>
                     </div>
 
-                    <div class="col-7">
+                    <div class="col-12">
+                        <h2 class="fs-3">Issues</h2>
                         <div class="card bg-danger text-light rounded-3">
                             <div class="card-body">
-                                <h3>Alarm:</h3>
-                                <p>There is smoke in room 222</p>
+                                <h3 class="text-center">Alarm:</h3>
+                                <p class="text-center">There is smoke in room 222</p>
                             </div>
                         </div>
                     </div>
 
+                    <h2 class="fs-3">Widgets</h2>
+                    <p class="add-widgets">Add Widgets</p>
                     <div class="col-5">
                         <div class="card">
                             <div class="card-body">
@@ -79,8 +86,8 @@
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
+                </div> <!-- Closes .row-->
+            </div> <!-- Closes .container-xl-->
         </section>
     </main>
 </body>

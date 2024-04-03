@@ -12,6 +12,8 @@
     --bs-secondary-rgb: 102, 132, 185;
     --cs-primary-dark: #202d45;
     --cs-primary-rgb: 32, 45, 69;
+    --bs-tertiary-bg: #859dc7;
+    --bs-tertiary-bg-rgb: 133, 157, 199;
 }
 
 .btn-primary {
@@ -44,6 +46,7 @@
     --bs-btn-disabled-border-color: #0d6efd;
     --bs-gradient: none;
 }
+
 
 /* ------------------------------
     Changes fonts
@@ -124,17 +127,17 @@ input::placeholder {
 }
 
 /* ------------------------------
-    Adds background images to tasks
+    Adds background images to tasks with linear gradient to make it darker
     ------------------------------
 */
 
 .teamwork {
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../images/teamwork.jpg) no-repeat center center;
+    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(../images/teamwork.jpg) no-repeat center center;
     background-size: cover;
 }
 
 .management {
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../images/management.jpg) no-repeat center center;
+    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(../images/management.jpg) no-repeat center center;
     background-size: cover;
 }
 
@@ -145,4 +148,27 @@ input::placeholder {
 
 .btn-outline-primary:hover {
     text-decoration: underline;
+}
+
+/* ------------------------------
+    Adds style to dashboard
+    ------------------------------
+*/
+
+.card ul {
+    list-style: none;
+}
+
+.add-widgets {
+    transition: 1s ease-in-out;
+}
+
+.add-widgets:hover {
+    text-decoration: underline;
+    color: var(--bs-primary);
+}
+
+.footage {
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../images/footage.jpg) no-repeat center center;
+    background-size: cover;
 }
