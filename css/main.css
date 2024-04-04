@@ -14,6 +14,8 @@
     --cs-primary-rgb: 32, 45, 69;
     --bs-tertiary-bg: #859dc7;
     --bs-tertiary-bg-rgb: 133, 157, 199;
+    --bs-light: #aac2e6;
+    --bs-light-rgb: 170, 194, 230;
 }
 
 .btn-primary {
@@ -63,6 +65,11 @@ h1 {
 h2 {
     font-family: "Faustina", serif;
     font-weight: 600;
+}
+
+h3 {
+    font-family: "Faustina", serif;
+    font-weight: 400;
 }
 
 .tasks h2 {
@@ -148,6 +155,16 @@ input::placeholder {
 
 .btn-outline-primary:hover {
     text-decoration: underline;
+}
+
+/* ------------------------------
+    Adds style to homepage
+    ------------------------------
+*/
+
+/* Centers carousel image */
+.carousel-inner img {
+    margin: auto;
 }
 
 /* ------------------------------
