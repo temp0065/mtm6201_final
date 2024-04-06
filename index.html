@@ -30,8 +30,8 @@
 
                 <div class="collapse collapse-horizontal" id="search-bar">
                     <form class="d-flex" role="search">
-                        <input class="form-control me-2 rounded-5 px-5" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-dark rounded-2" type="submit">Search</button>
+                        <input class="form-control me-2 rounded-5 px-5 border-1 border-black search-input" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-dark rounded-2" type="submit">Search</button>
                     </form>
                 </div> <!-- Closes #search-bar -->
     
@@ -46,29 +46,27 @@
                 </ul> <!-- Closes nav icons -->
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-4">
+                        <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                    </li>
-                    
-                    <li class="nav-item">
-                        <a class="nav-link" href="dashboard.html">Dashboard</a>
-                    </li>
-                    
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Key Information</a>
-                    </li>
-                    
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Footage</a>
-                    </li>
-                    
-                    <li class="nav-item">
-                        <a class="nav-link" href="tasks.html">Tasks</a>
-                    </li>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="dashboard.html">Dashboard</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Key Information</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Footage</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="tasks.html">Tasks</a>
+                        </li>
                     </ul> <!--Closes .navbar-nav-->
-
                 </div><!-- Closes .nav-collapse-->
             </div><!-- Closes .container-lg-->
           </nav> <!-- Closes .navbar-->
@@ -76,42 +74,65 @@
 
     <main class="text-center" id="main-content" role="main">
         <h1 class="py-4">Welcome to the Homepage</h1>
-        <div id="carouselAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div id="carouselAutoplaying" class="carousel slide w-50" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
             <div class="carousel-inner">
-              <div class="carousel-item active">
-                <h2>Dashboard</h2>
-                <img src="images/dashboard.jpg" class="d-block w-50 rounded-5" alt="Image of a dashboard">
-                <p>In the Dashboard you can find all the information you need summarized at a glance.</p>
-              </div>
-              <div class="carousel-item">
-                <h2>Key Information</h2>
-                <img src="images/key-information.jpg" class="d-block w-50 rounded-5" alt="Magnifying Glass">
-                <p>In Key Information you can find more detailed information than the Dashboard, and graphs with statistics.</p>
-              </div>
-              <div class="carousel-item">
-                <h2>Footage</h2>
-                <img src="images/footage.jpg" class="d-block w-50 rounded-5" alt="Footage of a hospital room">
-                <p>Under Footage you can find footage of every room in the hospital.</p>
-              </div>
-              <div class="carousel-item">
-                <h2>Tasks</h2>
-                <img src="images/tasks.jpg" class="d-block w-50 rounded-5" alt="Notes waiting to have information added to them">
-                <p>Under Tasks you can set up task groups to automate your workflow.</p>
+                
+                <div class="carousel-item active">
+                    <h2>Dashboard</h2>
+                    <img src="images/dashboard.jpg" class="d-block rounded-5 w-100" alt="Image of a dashboard">
+                    <p>In the Dashboard you can find all the information you need summarized at a glance.</p>
+                    <div class="pb-3">
+                        <a href="dashboard.html" class="btn btn-primary border-0 py-2 px-5 fs-5 mx-3" aria-label="Select a page">Select</a>
+                        <a href="#" class="btn btn-outline-primary py-2 px-5 fs-5" aria-label="Go through the Tutorial">Tutorial</a>
+                    </div> <!-- Closes div for button-->
                 </div>
+
+                <div class="carousel-item">
+                    <h2>Key Information</h2>
+                    <img src="images/key-information.jpg" class="d-block rounded-5 w-100" alt="Magnifying Glass">
+                    <p>In Key Information you can find more detailed information than the Dashboard, and graphs with statistics.</p>
+                    <div class="pb-3">
+                        <a href="#" class="btn btn-primary border-0 py-2 px-5 fs-5 mx-3" aria-label="Select a page">Select</a>
+                        <a href="#" class="btn btn-outline-primary py-2 px-5 fs-5" aria-label="Go through the Tutorial">Tutorial</a>
+                    </div> <!-- Closes div for button-->
+                </div>
+
+                <div class="carousel-item">
+                    <h2>Footage</h2>
+                    <img src="images/footage.jpg" class="d-block rounded-5 w-100" alt="Footage of a hospital room">
+                    <p>Under Footage you can find footage of every room in the hospital.</p>
+                    <div class="pb-3">
+                        <a href="#" class="btn btn-primary border-0 py-2 px-5 fs-5 mx-3" aria-label="Select a page">Select</a>
+                        <a href="#" class="btn btn-outline-primary py-2 px-5 fs-5" aria-label="Go through the Tutorial">Tutorial</a>
+                    </div> <!-- Closes div for button-->
+                </div>
+
+                <div class="carousel-item">
+                    <h2>Tasks</h2>
+                    <img src="images/tasks.jpg" class="d-block rounded-5 w-100" alt="Notes waiting to have information added to them">
+                    <p>Under Tasks you can set up task groups to automate your workflow.</p>
+                    <div class="pb-3">
+                        <a href="tasks.html" class="btn btn-primary border-0 py-2 px-5 fs-5 mx-3" aria-label="Select a page">Select</a>
+                        <a href="#" class="btn btn-outline-primary py-2 px-5 fs-5" aria-label="Go through the Tutorial">Tutorial</a>
+                    </div> <!-- Closes div for button-->
+                </div>
+
             </div> <!-- Closes .carousel-inner-->
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselAutoplaying" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#carouselAutoplaying" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
             </button>
         </div> <!-- Closes .carousel-->
-        <div class="pb-3">
-            <a href="#" class="btn btn-primary border-0 py-2 px-5 fs-5 mx-3" aria-label="Select a page">Select</a>
-            <a href="#" class="btn btn-outline-primary py-2 px-5 fs-5" aria-label="Go through the Tutorial">Tutorial</a>
-        </div> <!-- Closes div for button-->
     </main> <!-- Closes main-->
 
     <!-- Bootstrap Javascript Link -->

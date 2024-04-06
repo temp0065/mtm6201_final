@@ -14,8 +14,8 @@
     --cs-primary-rgb: 32, 45, 69;
     --bs-tertiary-bg: #859dc7;
     --bs-tertiary-bg-rgb: 133, 157, 199;
-    --bs-light: #aac2e6;
-    --bs-light-rgb: 170, 194, 230;
+    --bs-light-bg: #aac2e6;
+    --bs-light-bg-rgb: 170, 194, 230;
 }
 
 .btn-primary {
@@ -101,7 +101,7 @@ input::placeholder {
 .skip-links a {
     position: absolute;
     top: -8em;
-    background-color: #FA4A0C;
+    background-color: var(--bs-primary);
     color: white;
     padding: .5em 1em;
     font-weight: bold;
@@ -163,8 +163,8 @@ input::placeholder {
 */
 
 /* Centers carousel image */
-.carousel-inner img {
-    margin: auto;
+.carousel {
+    margin: 0 auto;
 }
 
 /* ------------------------------
@@ -186,6 +186,65 @@ input::placeholder {
 }
 
 .footage {
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../images/footage.jpg) no-repeat center center;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../images/footage-2.jpg) no-repeat center center;
     background-size: cover;
+}
+
+/* ------------------------------
+    Adds style to tasks
+    ------------------------------
+*/
+
+.new-task {
+    text-decoration: underline;
+}
+
+.task {
+    text-decoration: none;
+}
+
+/* ------------------------------
+    Adds animations to tasks
+    ------------------------------
+*/
+.task:hover {
+    transform: translateY(-20px);
+    transition: 0.5s ease-in-out;
+    filter: drop-shadow(1px 3px 0.5rem var(--bs-primary));
+}
+
+/* ------------------------------
+    Adds style to navbar
+    ------------------------------
+*/
+
+.search-input::placeholder {
+    margin-right: 10px;
+}
+
+.nav-link:focus {
+    background-color: var(--bs-primary);
+    color: white;
+}
+
+/* ------------------------------
+    Addss media queries to tasks page
+    ------------------------------
+*/
+
+@media (min-width: 1728px) {
+    .new-task {
+        height: 150px;
+    }
+}
+
+/* ------------------------------
+    Adds media queries to dashboard page
+    ------------------------------
+*/
+
+@media (min-width: 1728px) {
+    .footage {
+        height: 300px;
+    }
 }
