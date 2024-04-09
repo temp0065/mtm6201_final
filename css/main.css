@@ -232,9 +232,13 @@ input::placeholder {
     ------------------------------
 */
 
-@media (min-width: 1728px) {
+@media (min-width: 108em) {
     .new-task {
-        height: 150px;
+        height: 9.375em;
+    }
+
+    .task {
+        height: 18.75em;
     }
 }
 
@@ -243,8 +247,14 @@ input::placeholder {
     ------------------------------
 */
 
-@media (min-width: 1728px) {
+@media (min-width: 62em) {
     .footage {
-        height: 300px;
+        height: 18.75em;
+    }
+}
+
+@media (min-width: 48em) and (max-width: 62em) {
+    .footage {
+        height: 36.25em;
     }
 }
