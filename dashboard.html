@@ -72,13 +72,23 @@
                                                                     <li>Room 178</li>
                                                                     <li>Room 22</li>
                                                                 </ul>
-                                                                <i class="bi bi-chevron-right fs-1"></i>
+                                                            <i class="bi bi-chevron-right fs-1"></i>
                                                         </div> <!-- Closes .card-body-->
                                                     </div> <!-- Closes .card-->
                                                 </div> <!-- Closes .carousel-item-->
 
                                                 <div class="carousel-item">
-                                                    <img src="..." class="d-block w-100" alt="...">
+                                                    <div class="card border-0">
+                                                        <div class="card-body bg-dark text-light rounded-4">
+                                                            <h3>Lights Broken: <i class="bi bi-lightbulb-fill display-1 text-secondary"></i></h3>
+                                                                <ul class="fs-5">
+                                                                    <li>Room 210</li>
+                                                                    <li>Room 18</li>
+                                                                    <li>Room 222</li>
+                                                                </ul>
+                                                            <i class="bi bi-chevron-right fs-1"></i>
+                                                        </div> <!-- Closes .card-body-->
+                                                    </div> <!-- Closes .card-->
                                                 </div>
                                             </div> <!-- Closes carousel-->
                                         </div>
@@ -98,14 +108,14 @@
                                         <div class="carousel-item active">
                                             <div class="card bg-danger text-light border-0 rounded-4 p-4 issues">
                                                 <div class="card-body">
-                                                    <h3 class="display-5 d-flex justify-content-center"> <i class="bi bi-exclamation-lg text-danger-emphasis display-1"></i> <i class="bi bi-fire text-danger-emphasis display-3"></i> Alarm:</h3>
+                                                    <h3 class="display-5"> <i class="bi bi-exclamation-lg text-danger-emphasis display-1"></i> <i class="bi bi-fire text-danger-emphasis display-3"></i> Alarm:</h3>
                                                     <div class="d-flex justify-content-end">
                                                         <p class="me-5 fs-5">There is smoke in room 222</p>
                                                         <i class="bi bi-chevron-right fs-1"></i>
                                                     </div> <!-- Closes .d-flex-->
                                                 </div> <!-- Closes .card-body-->
                                             </div> <!-- Closes .card-->
-                                        </div>
+                                        </div> <!-- Closes .carousel-item-->
 
                                         <div class="carousel-item">
                                             <div class="card bg-dark text-light border-0 rounded-4 p-4 issues">
@@ -117,7 +127,7 @@
                                                     </div> <!-- Closes .d-flex-->
                                                 </div> <!-- Closes .card-body-->
                                             </div> <!-- Closes .card-->
-                                        </div>
+                                        </div> <!-- Closes .carousel-item-->
 
                                         <div class="carousel-item">
                                             <div class="card bg-danger text-light border-0 rounded-4 p-4 issues">
@@ -129,9 +139,10 @@
                                                     </div> <!-- Closes .d-flex-->
                                                 </div> <!-- Closes .card-body-->
                                             </div> <!-- Closes .card-->
-                                      </div>
-                                    </div>
-                                  </div>
+                                        </div> <!-- Closes .carousel-item-->
+                                    </div> <!-- Closes .carousel-inner-->
+                                </div> <!-- Closes .carousel-->
+                            </div> <!-- Closes column for Issues-->
                         </div> <!-- Closes .row-->
                     </div> <!-- Closes column for Dashboard-->
                 </div> 
@@ -143,25 +154,28 @@
                                 <h2 class="fs-3">Widgets</h2>
                                 <p class="add-widgets align-self-center m-0">Add Widgets</p>
                             </div>
-                            <div>
-                                <div class="col-6 .col-lg-12">
-                                    <div class="card border-0">
-                                        <div class="card-body order-lg-last bg-light">
-                                            <h3>Issues Resolved</h3>
-                                            <p>2025-1-18</p>
-                                        </div>
-                                    </div>
-                                </div>
-            
-                                <div class="col-6 .col-lg-12">
-                                    <div class="card border-0 mt-lg-4">
-                                        <div class="card-body bg-black text-light">
-                                            <h3>Incident Peak:</h3>
-                                            <p>4p.m</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            <div class="col-6 .col-lg-12">
+                                <div class="card border-0">
+                                    <div class="card-body order-lg-last bg-light">
+                                        <h3>Issues Resolved</h3>
+                                        <ul>
+                                            <li>Rebecca</li>
+                                            <li>Steve</li>
+                                            <li>John</li>
+                                        </ul>
+                                        <p>2025-1-18</p>
+                                    </div> <!-- Closes .card-body-->
+                                </div> <!-- Closes .card-->
+                            </div> <!-- Closes columns-->
+        
+                            <div class="col-6 .col-lg-12">
+                                <div class="card border-0 mt-lg-4">
+                                    <div class="card-body bg-black text-light">
+                                        <h3>Incident Peak:</h3>
+                                        <p>4p.m</p>
+                                    </div> <!-- Closes .card-body-->
+                                </div> <!-- Closes .card-->
+                            </div> <!-- Closes columns-->
                         </div> <!-- Closes .row-->
                     </div> <!-- Closes columns for widgets-->
                 </div>
@@ -170,6 +184,11 @@
     </main>
 </body>
 </html>
+
+
+
+
+
 <!-- .container-xl
     .row
         .col-12 .col-lg-8 [footage etc.]
