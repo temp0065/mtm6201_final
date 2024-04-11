@@ -16,6 +16,57 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+    <header role="banner">
+        <nav class="navbar bg-body-tertiary pb-0" id="#main-nav" role="navigation">
+            <div class="container-fluid">
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button> <!-- Closes Hamburger Button-->
+
+                <div class="collapse collapse-horizontal" id="search-bar">
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2 rounded-5 px-5 border-1 border-black search-input" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-dark rounded-2" type="submit">Search</button>
+                    </form>
+                </div> <!-- Closes #search-bar -->
+    
+                <ul class="navbar-nav d-flex flex-row">
+                    <li class="fs-2 me-3 me-lg-4">
+                        <button class="nav-link collapsed" data-bs-toggle="collapse" data-bs-target="#search-bar" aria-expanded="true" aria-controls="search-bar"><i class="bi bi-search"></i> <i class="bi bi-x"></i></button>
+                    </li>
+    
+                    <li class="fs-2">
+                        <a class="nav-link" href="#"><i class="bi bi-person-circle text-da"></i></a>
+                    </li>
+                </ul> <!-- Closes nav icons -->
+
+                <div class="collapse navbar-collapse row" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-3 text-center bg-primary p-0">
+                        <li class="nav-item p-3" id="nav-top">
+                            <a class="nav-link text-white" href="index.html">Home</a>
+                        </li>
+                        
+                        <li class="nav-item p-3">
+                            <a class="nav-link text-white" href="dashboard.html">Dashboard</a>
+                        </li>
+                        
+                        <li class="nav-item p-3">
+                            <a class="nav-link text-white" href="#">Key Information</a>
+                        </li>
+                        
+                        <li class="nav-item p-3">
+                            <a class="nav-link text-white" href="#">Footage</a>
+                        </li>
+                        
+                        <li class="nav-item p-3 bg-body-tertiary">
+                            <a class="nav-link active text-black" aria-current="page" href="tasks.html">Tasks</a>
+                        </li>
+                    </ul> <!--Closes .navbar-nav-->
+                </div><!-- Closes .nav-collapse-->
+            </div><!-- Closes .container-fluid-->
+          </nav> <!-- Closes .navbar-->
+    </header> <!-- Closes header-->
     <main role="main">
         <section>
             <h1 class="text-center py-4">My Tasks</h1>
@@ -24,7 +75,8 @@
                     <div class="col-6 col-lg-6 offset-lg-3">
                         <div class="card py-5 border-5 border-dark" style="background-color: grey; border-style: dashed;">
                             <div class="card-body text-white">
-                                <div class="d-flex justify-content-end flex-column">
+                                <div class="d-flex justify-content-between h-100 flex-column">
+                                    <div></div>
                                     <h2 class="card-title new-task align-self-center">New Task+</h2>
                                     <i class="bi bi-chevron-right fs-3 align-self-end"></i>
                                 </div>
@@ -35,7 +87,8 @@
                     <div class="col-6 col-lg-4">
                             <div class="card p-5 border-0 bg-dark text-white task">
                                 <div class="card-body">
-                                    <div class="d-flex justify-content-center flex-column">
+                                    <div class="d-flex justify-content-between h-100 flex-column">
+                                        <div></div>
                                         <h2 class="card-title align-self-center">Task Group 1</h2>
                                         <i class="bi bi-chevron-right fs-3 align-self-end"></i>
                                     </div> <!-- Closes .d-flex-->
@@ -46,9 +99,10 @@
                     <div class="col-6 col-lg-4">
                         <div class="card p-5 border-0 bg-primary text-white task">
                             <div class="card-body">
-                                <div class="d-flex justify-content-center">
-                                    <h2 class="card-title">Task Group 2</h2>
-                                    <i class="bi bi-chevron-right fs-3"></i>
+                                <div class="d-flex justify-content-between h-100 flex-column">
+                                    <div></div>
+                                    <h2 class="card-title align-self-center">Task Group 2</h2>
+                                    <i class="bi bi-chevron-right fs-3 align-self-end"></i>
                                 </div> <!-- Closes .d-flex-->
                             </div> <!-- Closes .card-body-->
                         </div> <!-- Closes .card-->
@@ -57,9 +111,11 @@
                     <div class="col-6 col-lg-4">
                         <div class="card p-5 border-0 teamwork task">
                             <div class="card-body text-white">
-                                <div class="d-flex justify-content-center">
-                                    <h2 class="card-title">Teamwork</h2>
-                                    <i class="bi bi-chevron-right fs-3"></i>
+                                <div></div>
+                                <div class="d-flex justify-content-between h-100 flex-column">
+                                    <div></div>
+                                    <h2 class="card-title align-self-center">Teamwork</h2>
+                                    <i class="bi bi-chevron-right fs-3 align-self-end"></i>
                                 </div> <!-- Closes .d-flex-->
                             </div> <!-- Closes .card-body-->
                         </div> <!-- Closes .card-->
@@ -68,9 +124,11 @@
                     <div class="col-6 col-lg-4">
                         <div class="card management p-5 mb-3 border-0 task">
                             <div class="card-body text-white">
-                                <div class="d-flex justify-content-center">
-                                    <h2 class="card-title">Management</h2>
-                                    <i class="bi bi-chevron-right fs-3"></i>
+                                <div></div>
+                                <div class="d-flex justify-content-between h-100 flex-column">
+                                    <div></div>
+                                    <h2 class="card-title align-self-center">Management</h2>
+                                    <i class="bi bi-chevron-right fs-3 align-self-end"></i>
                                 </div> <!-- Closes .d-flex-->
                             </div> <!-- Closes .card-body-->
                         </div> <!-- Closes .card-->
@@ -79,5 +137,6 @@
             </div> <!-- Closes container-xl-->
         </section>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

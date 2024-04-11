@@ -175,6 +175,30 @@ input::placeholder {
 }
 
 /* ------------------------------
+    Styles Navigation
+    ------------------------------
+*/
+
+/* Borders make it look like there is a different backgr */
+.nav-item {
+    border-bottom: 25px solid var(--cs-primary-dark);
+}
+
+.nav-item .active {
+    text-decoration: underline;
+}
+
+#nav-top {
+    border-top: 25px solid var(--cs-primary-dark);
+}
+
+.nav-item:hover {
+    background-color: var(--bs-tertiary-bg);
+    text-decoration: underline;
+    color: black;
+}
+
+/* ------------------------------
     Adds style to dashboard
     ------------------------------
 */
@@ -200,6 +224,15 @@ input::placeholder {
 .pie-chart {
     width: 150px;
     height: 150px;
+}
+
+text {
+    font-size: 2px;
+}
+
+/* Makes it so height matches temperatures height */
+.doors, .lights {
+    min-height: 320px;
 }
 
 /* ------------------------------
