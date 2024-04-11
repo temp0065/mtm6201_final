@@ -22,7 +22,7 @@
     </ul>
     <header role="banner">
         <nav class="navbar bg-body-tertiary" id="#main-nav" role="navigation">
-            <div class="container-lg">
+            <div class="container-fluid mx-3">
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -46,7 +46,7 @@
                 </ul> <!-- Closes nav icons -->
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-4">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-4 text-center">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                         </li>
@@ -68,7 +68,7 @@
                         </li>
                     </ul> <!--Closes .navbar-nav-->
                 </div><!-- Closes .nav-collapse-->
-            </div><!-- Closes .container-lg-->
+            </div><!-- Closes .container-fluid-->
           </nav> <!-- Closes .navbar-->
     </header> <!-- Closes header-->
 
@@ -85,7 +85,18 @@
                 
                 <div class="carousel-item active">
                     <h2>Dashboard</h2>
-                    <img src="images/dashboard.jpg" class="d-block rounded-5 w-100" alt="Image of a dashboard">
+                    <picture class="d-block rounded-5 w-100">
+                        <source srcset="images/dashboard-derivatives/dashboard-700_x_700"
+                        media="(max-width: 414px)">
+
+                        <source srcset="images/dashboard-derivatives/dashboard-1000_x_1000"
+                        media="(max-width: 992px)">
+
+                        <img 
+                        src="images/dashboard.jpg" 
+                        alt="Image of a dashboard">
+                    </picture>
+                    <!-- <img src="images/dashboard.jpg" class="d-block rounded-5 w-100" alt="Image of a dashboard"> -->
                     <p>In the Dashboard you can find all the information you need summarized at a glance.</p>
                     <div class="pb-3">
                         <a href="dashboard.html" class="btn btn-primary border-0 py-2 px-5 fs-5 mx-3" aria-label="Select a page">Select</a>

@@ -190,6 +190,11 @@ input::placeholder {
     background-size: cover;
 }
 
+.pie-chart {
+    width: 150px;
+    height: 150px;
+}
+
 /* ------------------------------
     Adds style to tasks
     ------------------------------
@@ -258,3 +263,7 @@ input::placeholder {
         height: 36.25em;
     }
 }
+
+/* @media (min-width: 26.875em) {
+
+} */
