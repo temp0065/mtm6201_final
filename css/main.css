@@ -16,6 +16,8 @@
     --bs-tertiary-bg-rgb: 133, 157, 199;
     --bs-light: #aac2e6;
     --bs-light-rgb: 170, 194, 230;
+    --bs-info: #ebebeb;
+    --bs-info-rgb: rgb(194, 194, 194);
 }
 
 .btn-primary {
@@ -84,6 +86,11 @@ p, a, form {
 input::placeholder {
     font-family: "Faustina", serif;
     font-weight: 400;
+}
+
+.navbar-nav .nav-link {
+    font-family: "Faustina", serif;
+    font-weight: 600;
 }
 
 /* ------------------------------

@@ -12,6 +12,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Doppio+One&family=Faustina:ital,wght@0,300..800;1,300..800&family=Geostar+Fill&display=swap" rel="stylesheet">
+    <!-- Animate.css link -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <!-- Main CSS Link -->
     <link rel="stylesheet" href="css/main.css">
 </head>
@@ -42,15 +46,13 @@
                                         <h2 class="fs-3">Temperature</h2>
                                         <div class="card border-0">
                                             <div class="card-body bg-light rounded-4">
-                                                <div>
-                                                    <h3>Lowest: <i class="bi bi-thermometer-snow display-1 text-primary ms-4"></i></h3>
-                                                    <p class="ms-4 fs-5">17°C | Room 211</p>
-                                                    <h3>Highest: <i class="bi bi-exclamation-lg text-danger fs-1"></i> <i class="bi bi-thermometer-sun display-4 text-danger"></i></h3>
-                                                    <div class="d-flex justify-content-between">
-                                                        <p class="ms-4 fs-5">40°C | Room 222</p>
-                                                        <i class="bi bi-chevron-right fs-1"></i>
-                                                    </div> <!-- Closes d-flex-->
-                                                </div>
+                                                <h3>Lowest: <i class="bi bi-thermometer-snow display-1 text-primary ms-4"></i></h3>
+                                                <p class="ms-4 fs-5">17°C | Room 211</p>
+                                                <h3>Highest: <i class="bi bi-exclamation-lg text-danger fs-1"></i> <i class="bi bi-thermometer-sun display-4 text-danger"></i></h3>
+                                                <div class="d-flex justify-content-between">
+                                                    <p class="ms-4 fs-5">40°C | Room 222</p>
+                                                    <i class="bi bi-chevron-right fs-1"></i>
+                                                </div> <!-- Closes d-flex-->
                                             </div> <!-- Closes .card-body-->
                                         </div> <!-- Closes .card-->
                                     </div> <!-- Closes columns for for temperature-->
@@ -67,7 +69,7 @@
                                                     <div class="card border-0">
                                                         <div class="card-body bg-dark text-white rounded-4">
                                                             <h3>Doors Broken: <i class="bi bi-door-open-fill display-1 text-secondary"></i></h3>
-                                                                <ul class="fs-5">
+                                                                <ul class="fs-5 text-info">
                                                                     <li>Room 204</li>
                                                                     <li>Room 178</li>
                                                                     <li>Room 22</li>
@@ -98,7 +100,7 @@
                             
                             <div class="col-12 order-lg-first">
                                 <h2 class="fs-3">Issues</h2>
-                                <div id="carouselExampleSlides" class="carousel slide" data-bs-ride="carousel">
+                                <div id="carouselExampleSlides" class="carousel slide animate__animated animate__pulse" data-bs-ride="carousel">
                                     <div class="carousel-indicators">
                                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -152,12 +154,12 @@
                         <div class="row">
                             <div class="d-flex justify-content-between py-2">
                                 <h2 class="fs-3">Widgets</h2>
-                                <p class="add-widgets align-self-center m-0">Add Widgets</p>
+                                <p class="add-widgets align-self-center m-0 animate__animated animate__tada">Add Widgets</p>
                             </div>
                             <div class="col-6 .col-lg-12">
                                 <div class="card border-0">
-                                    <div class="card-body order-lg-last bg-light">
-                                        <h3>Issues Resolved</h3>
+                                    <div class="card-body order-lg-last bg-light rounded-4">
+                                        <h3>Issues Resolved:</h3>
                                         <ul>
                                             <li>Rebecca</li>
                                             <li>Steve</li>
@@ -176,15 +178,17 @@
                                                 stroke-dasharray="calc(35 * 31.42 / 100) 31.42"
                                                 transform="rotate(-90) translate(-20)"/>
                                         </svg> <!-- Closes .pie-chart-->
-
-                                        <p>2025-1-18</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <p>2025-1-18</p>
+                                            <i class="bi bi-chevron-right fs-1"></i>
+                                        </div>
                                     </div> <!-- Closes .card-body-->
                                 </div> <!-- Closes .card-->
                             </div> <!-- Closes columns-->
         
                             <div class="col-6 .col-lg-12">
                                 <div class="card border-0 mt-lg-4">
-                                    <div class="card-body bg-black text-white">
+                                    <div class="card-body bg-black text-white rounded-4">
                                         <h3>Incident Peak:</h3>
                                         <svg viewBox="0 0 400 400" class="chart">
   
@@ -207,9 +211,11 @@
                                                     560, 380
                                                "
                                              />
-                                            
-                                          </svg>
-                                        <p>4p.m</p>
+                                        </svg> <!-- Closes .chart-->
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <p>4p.m</p>
+                                            <i class="bi bi-chevron-right fs-1"></i>
+                                        </div> <!-- Closes d-flex-->
                                     </div> <!-- Closes .card-body-->
                                 </div> <!-- Closes .card-->
                             </div> <!-- Closes columns-->
