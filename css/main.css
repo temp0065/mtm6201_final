@@ -14,8 +14,8 @@
     --cs-primary-rgb: 32, 45, 69;
     --bs-tertiary-bg: #859dc7;
     --bs-tertiary-bg-rgb: 133, 157, 199;
-    --bs-light-bg: #aac2e6;
-    --bs-light-bg-rgb: 170, 194, 230;
+    --bs-light: #aac2e6;
+    --bs-light-rgb: 170, 194, 230;
 }
 
 .btn-primary {
