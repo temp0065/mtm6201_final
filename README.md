@@ -8,6 +8,7 @@
     - Based svg charts off of https://www.figma.com/community/file/1106923560008546853/charts?searchSessionId=ltqfkesa-d4eqi55wbkf
     - Learnt how to make SVG charts off of tutorials from https://css-tricks.com/how-to-make-charts-with-svg/ and  https://www.youtube.com/watch?v=XEUCs7Sh8FI
     - Toptal to minify CSS
+    - Used derivv to get multiple image sizes
 
 ## Explanation of Project
     ### Process
