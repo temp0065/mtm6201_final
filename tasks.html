@@ -16,6 +16,10 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+    <ul class="skip-links">
+        <li><a href="#main-nav">Skip to main nav</a></li>
+        <li><a href="#main-content">Skip to main content</a></li>
+    </ul>
     <header role="banner">
         <nav class="navbar bg-body-tertiary pb-0" id="#main-nav" role="navigation">
             <div class="container-fluid">
@@ -73,65 +77,75 @@
             <div class="container-xl tasks">
                 <div class="row g-5">
                     <div class="col-6 col-lg-6 offset-lg-3">
-                        <div class="card py-5 border-5 border-dark" style="background-color: grey; border-style: dashed;">
-                            <div class="card-body text-white">
-                                <div class="d-flex justify-content-between h-100 flex-column">
-                                    <div></div>
-                                    <h2 class="card-title new-task align-self-center">New Task+</h2>
-                                    <i class="bi bi-chevron-right fs-3 align-self-end"></i>
-                                </div>
-                            </div> <!-- Closes .card-body-->
-                        </div> <!-- Closes .card-->
+                        <a href="#" aria-label="Create a new task">
+                            <div class="card py-5 border-5 border-dark new-task-card" style="background-color: grey; border-style: dashed;">
+                                <div class="card-body text-white">
+                                    <div class="d-flex justify-content-center h-100 flex-column">
+                                        <h2 class="card-title new-task align-self-center">New Task+</h2>
+                                        <i class="bi bi-chevron-right fs-3 align-self-end"></i>
+                                    </div> <!-- Closes d-flex-->
+                                </div> <!-- Closes .card-body-->
+                            </div> <!-- Closes .card-->
+                        </a>
                     </div> <!-- Closes column-->
 
                     <div class="col-6 col-lg-4">
+                        <a href="#">
                             <div class="card p-5 border-0 bg-dark text-white task">
                                 <div class="card-body">
                                     <div class="d-flex justify-content-between h-100 flex-column">
+                                        <!-- div helps with the spacing between -->
                                         <div></div>
                                         <h2 class="card-title align-self-center">Task Group 1</h2>
                                         <i class="bi bi-chevron-right fs-3 align-self-end"></i>
                                     </div> <!-- Closes .d-flex-->
                                 </div> <!-- Closes .card-body-->
                             </div> <!-- Closes .card-->
+                        </a>
                     </div> <!-- CLoses column-->
 
                     <div class="col-6 col-lg-4">
-                        <div class="card p-5 border-0 bg-primary text-white task">
-                            <div class="card-body">
-                                <div class="d-flex justify-content-between h-100 flex-column">
-                                    <div></div>
-                                    <h2 class="card-title align-self-center">Task Group 2</h2>
-                                    <i class="bi bi-chevron-right fs-3 align-self-end"></i>
-                                </div> <!-- Closes .d-flex-->
-                            </div> <!-- Closes .card-body-->
-                        </div> <!-- Closes .card-->
+                        <a href="#">
+                            <div class="card p-5 border-0 bg-primary text-white task">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between h-100 flex-column">
+                                        <div></div>
+                                        <h2 class="card-title align-self-center">Task Group 2</h2>
+                                        <i class="bi bi-chevron-right fs-3 align-self-end"></i>
+                                    </div> <!-- Closes .d-flex-->
+                                </div> <!-- Closes .card-body-->
+                            </div> <!-- Closes .card-->
+                        </a>
                     </div> <!-- Closes columns-->
 
                     <div class="col-6 col-lg-4">
-                        <div class="card p-5 border-0 teamwork task">
-                            <div class="card-body text-white">
-                                <div></div>
-                                <div class="d-flex justify-content-between h-100 flex-column">
+                        <a href="#">
+                            <div class="card p-5 border-0 teamwork task">
+                                <div class="card-body text-white">
                                     <div></div>
-                                    <h2 class="card-title align-self-center">Teamwork</h2>
-                                    <i class="bi bi-chevron-right fs-3 align-self-end"></i>
-                                </div> <!-- Closes .d-flex-->
-                            </div> <!-- Closes .card-body-->
-                        </div> <!-- Closes .card-->
+                                    <div class="d-flex justify-content-between h-100 flex-column">
+                                        <div></div>
+                                        <h2 class="card-title align-self-center">Teamwork</h2>
+                                        <i class="bi bi-chevron-right fs-3 align-self-end"></i>
+                                    </div> <!-- Closes .d-flex-->
+                                </div> <!-- Closes .card-body-->
+                            </div> <!-- Closes .card-->
+                        </a>
                     </div> <!-- Closes columns-->
 
                     <div class="col-6 col-lg-4">
-                        <div class="card management p-5 mb-3 border-0 task">
-                            <div class="card-body text-white">
-                                <div></div>
-                                <div class="d-flex justify-content-between h-100 flex-column">
+                        <a href="#">
+                            <div class="card management p-5 mb-3 border-0 task">
+                                <div class="card-body text-white">
                                     <div></div>
-                                    <h2 class="card-title align-self-center">Management</h2>
-                                    <i class="bi bi-chevron-right fs-3 align-self-end"></i>
-                                </div> <!-- Closes .d-flex-->
-                            </div> <!-- Closes .card-body-->
-                        </div> <!-- Closes .card-->
+                                    <div class="d-flex justify-content-between h-100 flex-column">
+                                        <div></div>
+                                        <h2 class="card-title align-self-center">Management</h2>
+                                        <i class="bi bi-chevron-right fs-3 align-self-end"></i>
+                                    </div> <!-- Closes .d-flex-->
+                                </div> <!-- Closes .card-body-->
+                            </div> <!-- Closes .card-->
+                        </a>
                     </div> <!-- Closes columns-->
                 </div> <!-- Closes .row-->
             </div> <!-- Closes container-xl-->

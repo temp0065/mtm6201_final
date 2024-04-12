@@ -75,19 +75,13 @@
     <main class="text-center" id="main-content" role="main">
         <h1 class="py-4">Welcome to the Homepage</h1>
         <div id="carouselAutoplaying" class="carousel slide w-50" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-            </div>
             <div class="carousel-inner">
                 
                 <div class="carousel-item active">
                     <h2>Dashboard</h2>
                     <picture>
                         <source srcset="images/dashboard-500_x_300.jpg"
-                        media="(max-width: 414px)">
+                        media="(max-width: 990px)">
 
                         <source srcset="images/dashboard-940_x_630.jpg"
                         media="(min-width: 992px)">
@@ -106,7 +100,18 @@
 
                 <div class="carousel-item">
                     <h2>Key Information</h2>
-                    <img src="images/key-information.jpg" class="d-block rounded-5 w-100" alt="Magnifying Glass">
+                    <picture>
+                        <source srcset="images/key-information-500_x_300.jpg"
+                        media="(max-width: 992px)">
+
+                        <source srcset="images/key-information-940_x_630.jpg"
+                        media="(min-width: 992px)">
+
+                        <img 
+                        src="images/key-information.jpg" 
+                        alt="Image of a maginfying glass"
+                        class="rounded-5 w-100">
+                    </picture>
                     <p>In Key Information you can find more detailed information than the Dashboard, and graphs with statistics.</p>
                     <div class="pb-3">
                         <a href="#" class="btn btn-primary border-0 py-2 px-5 fs-5 mx-3 mb-3 mb-md-0" aria-label="Select a page">Select</a>
@@ -116,7 +121,18 @@
 
                 <div class="carousel-item">
                     <h2>Footage</h2>
-                    <img src="images/footage.jpg" class="d-block rounded-5 w-100" alt="Footage of a hospital room">
+                    <picture>
+                        <source srcset="images/footage-500_x_300.jpg"
+                        media="(max-width: 992px)">
+
+                        <source srcset="images/footage-940_x_630.jpg"
+                        media="(min-width: 992px)">
+
+                        <img 
+                        src="images/footage.jpg" 
+                        alt="Footage of a hospital room"
+                        class="rounded-5 w-100">
+                    </picture>
                     <p>Under Footage you can find footage of every room in the hospital.</p>
                     <div class="pb-3">
                         <a href="#" class="btn btn-primary border-0 py-2 px-5 fs-5 mx-3 mb-3 mb-md-0" aria-label="Select a page">Select</a>
@@ -126,7 +142,18 @@
 
                 <div class="carousel-item">
                     <h2>Tasks</h2>
-                    <img src="images/tasks.jpg" class="d-block rounded-5 w-100" alt="Notes waiting to have information added to them">
+                    <picture>
+                        <source srcset="images/tasks-500_x_300.jpg"
+                        media="(max-width: 992px)">
+
+                        <source srcset="images/tasks-940_x_630.jpg"
+                        media="(min-width: 992px)">
+
+                        <img 
+                        src="images/tasks.jpg" 
+                        alt="Notes waiting to have information added to them"
+                        class="rounded-5 w-100">
+                    </picture>
                     <p>Under Tasks you can set up task groups to automate your workflow.</p>
                     <div class="pb-3">
                         <a href="tasks.html" class="btn btn-primary border-0 py-2 px-5 fs-5 mx-3 mb-3 mb-md-0" aria-label="Select a page">Select</a>
