@@ -58,10 +58,9 @@
 */
 
 h1 {
-    font-family: "Geostar Fill", serif;
-    font-weight: 400;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
     font-style: normal;
-    text-decoration: underline;
 }
 
 h2 {
@@ -76,6 +75,7 @@ h3 {
 
 .tasks h2 {
     font-weight: 400;
+    text-decoration: underline;
 }
 
 p, a, form {
@@ -208,6 +208,7 @@ input::placeholder {
 }
 
 .add-widgets {
+    text-decoration: underline;
     transition: 1s ease-in-out;
 }
 
