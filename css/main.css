@@ -179,7 +179,7 @@ input::placeholder {
     ------------------------------
 */
 
-/* Borders make it look like there is a different backgr */
+/* Borders make it look like there is a different background */
 .nav-item {
     border-bottom: 25px solid var(--cs-primary-dark);
 }
@@ -227,14 +227,10 @@ input::placeholder {
     height: 220px;
 }
 
-text {
-    font-size: 2px;
-}
-
 /* Makes it so height matches temperatures height */
-.doors, .lights {
+/* .doors, .lights {
     min-height: 320px;
-}
+} */
 
 /* ------------------------------
     Adds style to tasks

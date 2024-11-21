@@ -73,13 +73,13 @@
           </nav> <!-- Closes .navbar-->
     </header> <!-- Closes header-->
     <main role="main" id="main-content">
-        <section>
-            <h1 class="text-center py-4">My Tasks</h1>
-            <div class="container-xl tasks">
+        <section aria-labelledby="tasks-title">
+            <h1 class="text-center py-4" id="tasks-title">My Tasks</h1>
+            <div class="container-fluid tasks">
                 <div class="row g-5">
-                    <div class="col-6 col-lg-6 offset-lg-3">
+                    <div class="col-6 offset-lg-3">
                         <a href="#" aria-label="Create a new task">
-                            <div class="card py-5 border-5 border-dark new-task-card" style="background-color: grey; border-style: dashed;">
+                            <div class="card p-5 border-5 border-dark new-task-card h-100" style="background-color: grey; border-style: dashed;">
                                 <div class="card-body text-white">
                                     <div class="d-flex justify-content-center h-100 flex-column">
                                         <h2 class="card-title new-task align-self-center">New Task+</h2>
@@ -92,7 +92,7 @@
 
                     <div class="col-6 col-lg-4">
                         <a href="#">
-                            <div class="card p-5 border-0 bg-dark text-white task">
+                            <div class="card border-0 bg-dark text-white task h-100">
                                 <div class="card-body">
                                     <div class="d-flex justify-content-between h-100 flex-column">
                                         <!-- div helps with the spacing between -->
@@ -107,7 +107,7 @@
 
                     <div class="col-6 col-lg-4">
                         <a href="#">
-                            <div class="card p-5 border-0 bg-primary text-white task">
+                            <div class="card p-5 border-0 bg-primary text-white task h-100">
                                 <div class="card-body">
                                     <div class="d-flex justify-content-between h-100 flex-column">
                                         <div></div>
@@ -121,7 +121,7 @@
 
                     <div class="col-6 col-lg-4">
                         <a href="#">
-                            <div class="card p-5 border-0 teamwork task">
+                            <div class="card p-5 border-0 teamwork task h-100">
                                 <div class="card-body text-white">
                                     <div></div>
                                     <div class="d-flex justify-content-between h-100 flex-column">
@@ -136,7 +136,7 @@
 
                     <div class="col-6 col-lg-4">
                         <a href="#">
-                            <div class="card management p-5 mb-3 border-0 task">
+                            <div class="card management p-5 mb-3 border-0 task h-100">
                                 <div class="card-body text-white">
                                     <div></div>
                                     <div class="d-flex justify-content-between h-100 flex-column">

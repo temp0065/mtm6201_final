@@ -18,14 +18,14 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <!-- Main CSS Link -->
-    <link rel="stylesheet" href="css/minify.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
     <ul class="skip-links">
         <li><a href="#main-nav">Skip to main nav</a></li>
         <li><a href="#main-content">Skip to main content</a></li>
     </ul>
-    <header role="banner">
+    <header>
         <nav class="navbar bg-body-tertiary pb-0" id="#main-nav" role="navigation">
             <div class="container-fluid">
 
@@ -79,18 +79,18 @@
     <main role="main" id="#main-content">
         <h1 class="p-4 text-center">Dashboard</h1>
         <section>
-            <div class="container-xl">
+            <div class="container-fluid m-3 m-auto">
                 <div class="row">
                     <div class="col-12 col-lg-8">
                         <div class="row">
-                            <div class="col-12 col-md-6 col-lg-12 order-lg-last">
+                            <div class="col-12 col-md-6 col-lg-12 order-lg-last h-100">
                                 <h2 class="fs-3">Footage</h2>
                                 <a href="#" aria-label="See more footage">
-                                    <div class="card footage text-white mb-lg-3 rounded-4 border-0 py-3 p-md-0">
-                                        <div class="card-body d-flex flex-column justify-content-between">
+                                    <div class="card footage text-white mb-lg-3 rounded-4 border-0">
+                                        <div class="card-body d-flex flex-column justify-content-between align-items-between">
                                             <h3 class="d-flex align-items-center">Room 222: Smoke Alarm <i class="bi bi-exclamation-lg text-danger display-3"></i></h3>
-                                            <div class="d-flex justify-content-between">
-                                                    <p class="fs-5 align-self-end">2:00 p.m 2025-1-10</p>
+                                            <div class="d-flex justify-content-between align-content-center">
+                                                    <p class="fs-6">2:00 p.m 2025-1-10</p>
                                                     <i class="bi bi-chevron-right fs-1"></i>
                                             </div> <!-- Closes .d-flex-->
                                         </div> <!-- Closes .card-body-->
@@ -104,12 +104,12 @@
                                         <h2 class="fs-3">Temperature</h2>
                                         <a href="#" aria-label="See more detailed information on temperature">
                                             <div class="card border-0">
-                                                <div class="card-body bg-light rounded-4">
+                                                <div class="card-body bg-light rounded-4 temperature">
                                                     <h3>Lowest: <i class="bi bi-thermometer-snow display-1 text-primary ms-4"></i></h3>
-                                                    <p class="ms-4 fs-5">17°C | Room 211</p>
+                                                    <p class="ms-4 fs-6">17°C | Room 211</p>
                                                     <h3>Highest: <i class="bi bi-exclamation-lg text-danger fs-1"></i> <i class="bi bi-thermometer-sun display-4 text-danger"></i></h3>
                                                     <div class="d-flex justify-content-between">
-                                                        <p class="ms-4 fs-5">40°C | Room 222</p>
+                                                        <p class="ms-4 fs-6">40°C | Room 222</p>
                                                         <i class="bi bi-chevron-right fs-1"></i>
                                                     </div> <!-- Closes d-flex-->
                                                 </div> <!-- Closes .card-body-->
@@ -129,11 +129,11 @@
                                                     <a href="#" aria-label="See detailed information on which doors are broken">
                                                         <div class="card border-0">
                                                             <div class="card-body bg-dark text-white rounded-4 doors">
-                                                                <h3>Doors Broken: <i class="bi bi-door-open-fill display-1 text-secondary"></i></h3>
-                                                                    <ul class="fs-5 text-info">
-                                                                        <li>Room 204</li>
-                                                                        <li>Room 178</li>
-                                                                        <li>Room 22</li>
+                                                                <h3>Doors Broken: <i class="bi bi-door-open-fill display-1 text-secondary card-title"></i></h3>
+                                                                    <ul class="fs-6 text-info">
+                                                                        <li class="card-text">Room 204</li>
+                                                                        <li class="card-text">Room 178</li>
+                                                                        <li class="card-text">Room 22</li>
                                                                     </ul>
                                                                 <i class="bi bi-chevron-right fs-1 d-flex justify-content-end"></i>
                                                             </div> <!-- Closes .card-body-->
@@ -144,7 +144,7 @@
                                                 <div class="carousel-item">
                                                     <a href="#" aria-label="See detailed information on which lights are broken">
                                                         <div class="card border-0 lights">
-                                                            <div class="card-body bg-dark text-white rounded-4">
+                                                            <div class="card-body bg-dark text-white rounded-4 h-100">
                                                                 <h3>Lights Broken: <i class="bi bi-lightbulb-fill display-1 text-secondary"></i></h3>
                                                                     <ul class="fs-5">
                                                                         <li>Room 210</li>
@@ -172,16 +172,16 @@
                                     <div class="carousel-inner">
                                         <div class="carousel-item active">
                                             <a href="#" aria-label="See detailed information on the issue">
-                                                <div class="card bg-danger text-white border-0 rounded-4 p-4 issues">
-                                                    <div class="card-body row">
-                                                        <div class="col-6 d-flex align-items-center justify-content-center">
+                                                <div class="card bg-danger text-white border-0 rounded-4 issues">
+                                                    <div class="card-body d-flex justify-content-center">
+                                                        <div class="d-flex align-items-center">
                                                             <i class="bi bi-exclamation-lg text-danger-emphasis display-1"></i>
                                                             <i class="bi bi-fire text-danger-emphasis display-3"></i>
                                                         </div>
-                                                        <div class="col-6">
+                                                        <div class="flex-grow-1">
                                                             <div class="d-flex justify-content-end flex-column">
                                                                 <h3 class="display-5"> Alarm:</h3>
-                                                                <p class="me-5 fs-5">There is smoke in room 222</p>
+                                                                <p class="fs-6">There is smoke in room 222</p>
                                                                 <i class="bi bi-chevron-right fs-1 d-flex justify-content-end"></i>
                                                             </div> <!-- Closes .d-flex-->
                                                         </div> <!-- .col-6-->
